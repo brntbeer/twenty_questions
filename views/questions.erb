@@ -1,0 +1,13 @@
+<div id="question">
+  <p><%= @question[:question] %> </p>
+  <div id="wrong">
+    <% if !@question[:wrong].nil? %>
+      <p><%= link_to "http://localhost:4567/question/#{@question[:wrong]}", "No"%> </p>
+    <% else %>
+      <p><%= link_to "http://localhost:4567/newquestion/#{@question[:id]}","No" %> </p>
+    <% end %>
+  </div>
+  <div id="correct">
+    <p><%= link_to "http://localhost:4567/question/#{@question[:correct]}", "Yes"%> </p>
+  </div>
+</div>

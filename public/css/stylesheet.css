@@ -1,0 +1,17 @@
+.content{
+  width: 300px;
+  margin: 0 auto;
+}
+body {
+}
+#question{
+  text-align: center;
+  margin-top: 20px;
+
+}
+#correct{
+  float: right;
+}
+#wrong{
+  float: left;
+}
