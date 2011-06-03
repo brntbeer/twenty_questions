@@ -1,2 +1,21 @@
 <%# reference the previous question we came from in a post to new questions %>
+<div id="defeated">
+  <p>
+    Bummer! Unfortunately this means I've lost. Perhaps you could
+    assist me in making this experience better for next time?
+  </p>
+  <br />
 
+  <form action='/create' method='post'>
+    <p>
+      <label>Question: </label>
+      <input type='text' name='new_question[question]' title='New Question' size=55 />
+    </p>
+    <p>
+      <label>Answer: </label>
+      <input type='text' name='answer[question]' title='Correct Answer' size=55 />
+    </p>
+    <input type='hidden' name='from[id]' value= <%= from_id %> />
+    <input type='hidden' name='from[type]' value=<%= @type %> />
+    <input type='submit' value="Submit!"/>
+  </form>

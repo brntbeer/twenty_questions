@@ -19,10 +19,6 @@ end
 #ex) Question.new(question,correct#,wrong#)
 class Question < Sequel::Model
   attr_accessor :question, :correct, :wrong
-  #takes care of re-routing the parameters for the 
-  #question we're injecting in front of.
-  def reroute
-  end
 end
 
 migration "seed the database" do
