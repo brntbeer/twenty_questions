@@ -14,6 +14,9 @@ Next, simply run the application.
 
     $ ruby twenty_questions.rb
 
+Lastly, navigate out to localhost:4567 and play to your
+:heart:'s desire
+
 ##Halp
 If you notice some huge flaw in my logic or something is stupid, send me a 
 pull request!
